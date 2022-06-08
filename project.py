@@ -52,3 +52,11 @@ from PIL import Image
 image = Image.open('purple.jpg')
 
 st.image(image, caption='Iris flower')
+
+with open("purple.jpg", "rb") as file:
+     btn = st.download_button(
+             label="Download image",
+             data=file,
+             file_name="purple.jpg",
+             mime="image/png"
+           )
