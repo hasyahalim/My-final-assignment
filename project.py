@@ -42,7 +42,7 @@ st.write('setosa', 'versicolor', 'virginica')
 
 st.subheader('Prediction')
 st.write(iris.target_names[prediction])
-st.write(prediction)
+#st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
