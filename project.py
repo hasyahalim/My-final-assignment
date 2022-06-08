@@ -39,7 +39,7 @@ prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
 list_species = ['setosa', 'versicolor', 'virginica']
-df2 = pd.DataFrame(list_species, index[2], columns = ('Name'))
+df2 = pd.DataFrame(list_species, index[2])
 
 st.table(df2)
     
