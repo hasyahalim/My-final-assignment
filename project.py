@@ -40,8 +40,8 @@ prediction_proba = clf.predict_proba(df)
 
 def list_species():
    species = {['setosa', 'versicolor', 'virginica']}
-features = pd.DataFrame(species, index=[0], coloumns =['Species'])
-return features
+   features = pd.DataFrame(species, index=[0], coloumns =['Species'])
+   return features
 
 df2 = list_species()
 
