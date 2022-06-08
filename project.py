@@ -38,12 +38,11 @@ clf.fit(X, Y)
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
 
-def list_species():
-   species = {['setosa', 'versicolor', 'virginica']}
-   features = pd.DataFrame(species, index=[0], coloumns =['Species'])
-   return features
+list_species = ['setosa', 'versicolor', 'virginica']
+df2 = pd.DataFrame(list_species, index[2], columns = ('Name'))
 
-df2 = list_species()
+st.table(df2)
+    
 
 st.subheader('Class labels and their corresponding index number')
 st.write(["setosa", "versicolor", "virginica"])
